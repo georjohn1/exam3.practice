@@ -79,9 +79,29 @@ document.querySelector("figure:nth-of-type(2) figcaption").addEventListener("blu
  })
 
 // Problem 7
+// document.querySelector("#style").addEventListener("click",function(){
+//   console.log("problem 7a background change")
+//   parent = document.querySelector(".container");
+//   // document.querySelector("figure")
+//  })
 
+ //Problem 7b
+ document.querySelector("#style").addEventListener("click",function(){
+     console.log("problem 7b background picture change")
+     parent = document.querySelector(".container");
+     parent.classList.add("one-third");
+     parent.style.backgroundImage="url('./images/Purple-Haze.jpg')";
+ })
 
 // Problem 8
+document.querySelector("ELEMENT").addEventListener("EVENT",function(){
+     //YOUR CODE 
+     // document.addEventListener("click",function(event){
+    //  if(event.target.tagName === "IMG"){
+    //       console.log(event.target.src);
+    //       event.target.classList.toggle("pizazz");
+    //  }
+ })
 
 
 
