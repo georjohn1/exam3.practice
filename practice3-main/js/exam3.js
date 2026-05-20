@@ -94,14 +94,17 @@ document.querySelector("figure:nth-of-type(2) figcaption").addEventListener("blu
  })
 
 // Problem 8
-document.querySelector("ELEMENT").addEventListener("EVENT",function(){
+//document.querySelector("images").addEventListener("click",function(){
      //YOUR CODE 
-     // document.addEventListener("click",function(event){
-    //  if(event.target.tagName === "IMG"){
-    //       console.log(event.target.src);
-    //       event.target.classList.toggle("pizazz");
-    //  }
- })
+     images = document.querySelectorAll("img");
+
+     images.forEach(function(image) {
+      image.addEventListener("click", function(){
+        image.classList.toggle("pizazz")
+        console.log(image.src)
+      })
+     })
+//  })
 
 
 
