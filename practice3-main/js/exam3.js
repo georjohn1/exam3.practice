@@ -67,20 +67,18 @@ document.querySelector("figure:nth-of-type(1) figcaption").addEventListener("blu
 
 
 // Problem 6
-document.querySelector("figure:nth-of-type(2) figcaption").addEventListener("mouseover",function(){
+document.querySelector("figure:nth-of-type(2) figcaption").addEventListener("focus",function(){
   console.log("problem 6a font change")   
   this.style.fontStyle="italic";
+  this.style.color="blue";
  })
 
-document.querySelector("figure:nth-of-type(2) figcaption").addEventListener("mouseout",function(){
+document.querySelector("figure:nth-of-type(2) figcaption").addEventListener("blur",function(){
   console.log("problem 6b font reset")   
   this.style.fontStyle="normal";
  })
 
 // Problem 7
-
-
-
 
 
 // Problem 8
